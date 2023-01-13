@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   background-color: #052632;
+   width: 45vw;
+   margin: 0 auto;
+  
+  
+}
+
+.banner {
+    color:#052632;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
+    transition: ease-in-out 0.4s;
+     margin: 10px 0 19px 0;
+     border-radius: 15px;
+    
+}
+
+
+
+
+#container {
+    border: 15px solid #af9d45;
+    background-color: #0e92be;
+    border-radius: 8px;
+   height: 90%;
+  
+}
+
+#container .wrapper-all{
+    position: relative;
+    margin-bottom: 90px;
+}
+#container .wrapper-all h1{
+    position: relative;
+    z-index:20 ;
+   
+
+}
+#city-input{
+    box-shadow: inset 0 1px 15px 2px;
+}
+
+#city-input:focus{
+    background-color: #af9d45;
+}
+
+#city-input, #weather-output {
+    max-width: 400px;
+    margin: 0 auto;
+    transition: ease-in-out 0.5s;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    z-index: 1000;
+    position: relative;
+}
+
+#weather-output .card {
+   border-radius: 20px;
+   outline: none;
+   box-shadow: 0px 1px 1px 15px 2000px;
+   width:150%;
+
+}
+
+
+
+.btn{
+    background-color:  #052632;
+    transition: ease-out 0.6s;
+    z-index: 1000;
+    position: relative;
+}
+
+.btn:hover{
+    transform: scale(1.09);
+}
+  
+
+
+.banner:hover, 
+#city-input:hover, #weather-output:hover{
+  transform: scale(1.099);
+   
+} 
+
+
+/* Rain Animation */
