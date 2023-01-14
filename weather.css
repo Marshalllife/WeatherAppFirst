@@ -105,7 +105,7 @@ font-family: fantasy;
 }
 
 #weather-output:hover{
-    box-shadow: 0 1px 50px 15px;
+    box-shadow: 0 0.5px 20px 12px;
 }
 #weather-output .card {
    border-radius: 20px;

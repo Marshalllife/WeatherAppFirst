@@ -324,65 +324,86 @@
   .sleet ul li:last-child{
     animation: rainiii 10s 1.6s linear infinite;
   }
+  /* stars */
   
-  .text{
+  .sky {
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  } 
+
+  
+  .stars {
     position: absolute;
-    bottom: 0px;
+    top: -700%;
+    right: 50%;
+    bottom: 0;
+    left: -450%;
+    color: #f8f8f8;
+    text-align: right;
+    animation: shine 2s linear infinite;
+    transform: rotate(190deg);
   }
-  
-  .text ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .text ul li{
+
+
+
+  .stars:before,
+  .stars:after {
     position: absolute;
-    bottom: -50px;
-    width: 150px;
-    color: #fff;
-    font-family: 'Raleway Dots', cursive;
-    font-weight: 100;
-    font-size: 20px;
-    text-align: center;
-    opacity: 0;
+    content: "*";
+    color: #ffffff;
+    z-index: 2;
+    left: 200px;
   }
   
-  .text ul li:first-child{
-    animation: fade_in 10.0s 0s linear infinite;
+  .stars:before {
+    top: 80%;
+    right: -100%;
+    
+    animation: shine 2s linear infinite alternate-reverse;
   }
   
-  .text ul li:nth-child(2){
-    animation: fade_in 10.0s 1.6s linear infinite;
+  .stars:after {
+    top: 10%;
+    right: 10%;
+    animation: shine 1.5s linear infinite;
   }
   
-  .text ul li:nth-child(3){
-    animation: fade_in 10.0s 2.4s linear infinite;
+  .stars2 {
+    top: 100%;
+    right:35%;
+    text-align: left;
+    transform: rotate(-90deg);
   }
   
-  .text ul li:nth-child(4){
-    animation: fade_in 10.0s 3.4s linear infinite;
+  .stars2:after {
+    top: 50%;
+    right: 20%;
   }
   
-  .text ul li:nth-child(5){
-    animation: fade_in 10.0s 4.0s linear infinite;
+  .stars2:before {
+    top: -10%;
+    right: 400%;
   }
   
-  .text ul li:nth-child(6){
-    animation: fade_in 10.0s 5.4s linear infinite;
+  .shooting-star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: .3em;
+    height: .3em;
+    animation: cometFlight 3s ease infinite;
+ 
+   
   }
   
-  .text ul li:nth-child(7){
-    animation: fade_in 10.0s 6.4s linear infinite;
-  }
+
   
-  .text ul li:nth-child(8){
-    animation: fade_in 10.0s 7.2s linear infinite;
-  }
+ 
   
-  .text ul li:nth-child(9){
-    animation: fade_in 10.0s 8.2s linear infinite;
-  }
+
+
   
   @keyframes sun{
     0%{
@@ -757,3 +778,28 @@
       oapcity: 0;
     }
   }    
+
+
+/* stars */
+@keyframes cometFlight {
+  0% {
+    top: 0;
+    right: -50%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    right: 60%;
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    color: #3c4147;
+  }
+  50% {
+    color: #ffffff;
+  }
+}
