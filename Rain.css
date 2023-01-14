@@ -1,16 +1,10 @@
 
-/* body{
-    margin: 0;
-    padding: 0;
-    background: #33495f;
- 
-  } */
   
-  .wrapper{
+  .wrapper-Weather{
     width: 20px;
     height: 20px;
     position: absolute;
-    top: calc(320% - 75px);
+    top: calc(390% - 75px);
     left: calc(70% - 75px);
   
   }

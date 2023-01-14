@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,900|Source+Sans+Pro:300&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="/Rain.css" />
@@ -15,17 +16,13 @@
 
 </head>
 
-<body class="text-center">
-
-
-
-
-
-  <main id="container">
+<body >
+  <div class="text-center body-hold" >
+  <main id="container" >
     <div class="wrapper-all" >
       <h1 class="banner p-3"> <span class="banner-shadow"> Weather APP For Cities</span></h1>
-      <!-- Rain animations -->
-      <div class="wrapper">
+      <!-- Wheather animations -->
+      <div class="wrapper-Weather">
         <div class="sun"></div>
         <div class="cloud">
           <div class="cloud1">
@@ -114,6 +111,19 @@
       </div>
     </div>
     <!-- End -->
+
+    <!-- Stars and stars -->
+
+
+<div class="sky">
+    <div class="stars stars1">*</div>
+    <div class="stars stars2">*</div>
+    <div class="shooting-star"></div>
+  </div>
+</div>
+
+
+    <!-- Stars end -->
     <div class="form-group">
       <input id="city-input" class="form-control form-control-lg" type="text" placeholder="Search city" />
     </div>
@@ -140,6 +150,7 @@
   </main>
 
   <script src="/weather.js"></script>
+</div>
 </body>
 
 </html>

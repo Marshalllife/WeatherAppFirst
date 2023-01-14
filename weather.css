@@ -1,30 +1,25 @@
-* {
+*, 
+**, 
+***{
     box-sizing: border-box;
 }
-
-
-body {
+html{
     height: 100vh;
-    display: flex;
-    align-items: center;
-   background-color: #052632;
-   width: 45vw;
-   margin: 0 auto;
-  
-  
 }
-
-.banner {
-    color:#052632;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
-    transition: ease-in-out 0.4s;
-     margin: 10px 0 19px 0;
-     border-radius: 15px;
+body{
+    height: 100vh;
+    background-color: #052632;
+   
     
 }
 
+.body-hold{
+    height: 115vh;
+    display: flex;
+    background-color: #052632;
+   justify-content: center;
+   align-items: center;
+}
 
 
 
@@ -33,45 +28,91 @@ body {
     background-color: #0e92be;
     border-radius: 8px;
    height: 90%;
-  
+   width: 50%;
+ 
 }
+
+
+
+
+.banner {
+    color:#052632;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
+    transition: ease-in-out 0.4s;
+    
+}
+
+
+
+
 
 #container .wrapper-all{
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 167px;
+  
 }
-#container .wrapper-all h1{
-    position: relative;
+#container  h1{
+    position:relative;
     z-index:20 ;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
    
 
 }
+
 #city-input{
     box-shadow: inset 0 1px 15px 2px;
+    transition: ease-in-out 0.5s;
 }
 
+#city-input::placeholder{
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.form-group Input{
+font-family: fantasy;
+}
+#city-input:hover{
+    box-shadow: 0 1px 50px 2px;
+}
+
+
 #city-input:focus{
-    background-color: #af9d45;
+    background-color: #f1cd18cc;
+    transition: ease-in-out 0.5s;
 }
 
 #city-input, #weather-output {
-    max-width: 400px;
+    max-width: 440px;
     margin: 0 auto;
     transition: ease-in-out 0.5s;
     outline: none;
     border-radius: 15px;
     border: none;
-    z-index: 1000;
-    position: relative;
+    
+  
+    
+ 
+}
+#weather-output{
+    
+   box-shadow: 0 1px 17px 5px;
+   background-color: #0e92be;;
+ 
 }
 
+#weather-output:hover{
+    box-shadow: 0 1px 50px 15px;
+}
 #weather-output .card {
    border-radius: 20px;
    outline: none;
-   box-shadow: 0px 1px 1px 15px 2000px;
-   width:150%;
-
 }
+
+
 
 
 
@@ -80,6 +121,7 @@ body {
     transition: ease-out 0.6s;
     z-index: 1000;
     position: relative;
+   
 }
 
 .btn:hover{
@@ -95,4 +137,4 @@ body {
 } 
 
 
-/* Rain Animation */
+
