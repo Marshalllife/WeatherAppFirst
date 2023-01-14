@@ -398,12 +398,6 @@
    
   }
   
-
-  
- 
-  
-
-
   
   @keyframes sun{
     0%{
@@ -802,4 +796,34 @@
   50% {
     color: #ffffff;
   }
+}
+
+
+
+  /* Responsiveness */
+@media (max-width: 810px) {
+    .wrapper-Weather{
+      top: calc(400% - 75px);
+      left: calc(60% - 75px);
+}
+  .stars {
+   display: none;
+  }
+
+}
+
+
+
+
+@media (max-width: 477px) {
+
+  .wrapper-Weather{
+    width: 200px;
+    top: calc(265% - 75px);
+    left: calc(55% - 75px);
+}
+
+.stars {
+  display: none;
+}
 }
